@@ -45,7 +45,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - $$mdi:keyboard-space$$
-  - {t: number, h: toggle}
+  - number
   - {t: '$$mdi:keyboard-return$$', h: function}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -94,7 +94,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
