@@ -56,10 +56,10 @@
         default_layer {
             display-name = "Colemak DH";
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F     &kp P      &kp B                               &kp UP                &kp J        &kp L           &kp U          &kp Y       &kp SEMICOLON  &kp RALT
-&kp LEFT_ALT  &kp A  &kp R  &kp S     &kp T      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N           &kp E          &kp I       &kp O          &kp SQT
-&kp LCTRL     &kp Z  &kp X  &kp C     &kp D      &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H           &kp COMMA      &kp PERIOD  &kp SLASH      &kp ESC
-                            &kp LGUI  &kp SPACE  &lt 1 SPACE                                               &lt 2 ENTER  &kp LEFT_SHIFT  &kp BACKSPACE
+&kp TAB       &kp Q  &kp W  &kp F     &kp P      &kp B                         &kp UP                &kp J        &kp L           &kp U          &kp Y       &kp SEMICOLON  &kp RALT
+&kp LEFT_ALT  &kp A  &kp R  &kp S     &kp T      &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N           &kp E          &kp I       &kp O          &kp SQT
+&kp LCTRL     &kp Z  &kp X  &kp C     &kp D      &kp V  &kp SPACE              &kp DOWN              &kp K        &kp H           &kp COMMA      &kp PERIOD  &kp SLASH      &kp ESC
+                            &kp LGUI  &kp SPACE  &to 1                                               &lt 2 ENTER  &kp LEFT_SHIFT  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -67,10 +67,19 @@
 
         number_layer {
             bindings = <
-&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RPAR  &kp EXCL     &kp AT                        &trans          &kp PLUS   &kp N7     &kp N8  &kp N9  &kp STAR   &none
-&trans  &kp BACKSLASH  &kp LBKT              &kp RBKT  &kp HASH     &kp DOLLAR            &trans  &trans  &trans  &kp MINUS  &kp N4     &kp N5  &kp N6  &kp N0     &kp AMPS
-&trans  &trans         &kp LBRC              &kp RBRC  &kp PERCENT  &kp CARET   &trans            &trans          &kp UNDER  &kp N1     &kp N2  &kp N3  &kp EQUAL  &none
-                                             &trans    &kp SPACE    &trans                                        &trans     &kp LSHFT  &trans
+&kp TAB    &kp GRAVE  &kp N7  &kp N8    &kp N9     &kp LPAR                      &kp UP                &kp RPAR         &kp PLUS   &kp STAR   &kp EXCL   &kp AT      &kp RALT
+&kp LALT   &kp N0     &kp N4  &kp N5    &kp N6     &kp LBKT            &kp LEFT  &kp SPACE  &kp RIGHT  &kp RBKT         &kp MINUS  &kp FSLH   &kp HASH   &kp DOLLAR  &kp AMPS
+&kp LCTRL  &kp BSLH   &kp N1  &kp N2    &kp N3     &kp LBRC  &trans              &kp DOWN              &kp RIGHT_BRACE  &kp UNDER  &kp EQUAL  &kp PRCNT  &kp CARET   &kp ESC
+                              &kp LGUI  &kp SPACE  &trans                                              &trans           &kp LSHFT  &kp BSPC
+            >;
+        };
+
+        function_layer {
+            bindings = <
+&kp TAB    &trans  &kp F7  &kp F8    &kp F9     &kp F12                    &trans          &kp RCTRL  &trans     &trans    &trans  &trans  &kp RALT
+&kp LALT   &trans  &kp F4  &kp F5    &kp F6     &kp F11            &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &kp CAPS
+&kp LCTRL  &trans  &kp F1  &kp F2    &kp F3     &kp F10  &trans            &trans          &trans     &trans     &trans    &trans  &trans  &kp ESC
+                           &kp LGUI  &kp SPACE  &trans                                     &trans     &kp LSHFT  &kp BSPC
             >;
         };
 
